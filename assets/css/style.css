@@ -183,7 +183,9 @@ a {
 .contact div:nth-child(2) {
     background-image: url('../images/contact.jpg');
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
     display: flex;
     justify-content: center;
     align-items: center;
