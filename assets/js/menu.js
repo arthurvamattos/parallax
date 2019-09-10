@@ -9,10 +9,14 @@ const mostrarMenu = () => {
         navbar.style.height = '60px';
         aberto = false;
     } else {
-        navbar.style.overflow = 'auto';
         navbar.style.borderRadius = '0';
         navbar.style.width = '100px';
-        navbar.style.height = '40vh';
+        navbar.style.height = '260px';
+        navbar.addEventListener('resize', () => {
+            if (navbar.offsetHeigth >= 260) {
+                navbar.style.overflow = 'auto';
+            }
+        })
         aberto = true;
     }
 }
