@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    overflow-y: hidden !important;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    width: 60%;
+    height: 60px;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 1em;
+    transition: .7s;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-link {
+    margin-left: .5em;
+    padding: .5em;
+    color: #e6e6e6;
+}
+
+.nav-link:hover{
+    color: #f4c7ff;
+}
+
+.presentation {
+    margin: auto;
+    max-width: 400px;
+}
+
+.presentation div {
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    margin-left: 1em;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: #20202034 0px 2px 6px;
+}
+
+.btn-contato, .btn-apoie {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-contato:hover, .btn-apoie:hover {
+    color: #f4c7ff;
+}
+
+.btn-contato {
+    margin-left: 0;
+    background-color: #33063A;
+}
+
+.btn-contato:hover {
+    background-color: #4f085a;
+}
+
+.btn-apoie {
+    background-color: #9C0A98;
+}
+
+.btn-apoie:hover {
+    background-color: rgb(136, 9, 132);
+}
+
+.menu {
+    padding: .2em;
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .menu {
+        display: inline-block;
+    }
+    .navbar {
+        width: 60px;
+        align-self: flex-end;   
+        flex-direction: column;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .logo {
+        margin-top: 1em;
+    }
+    .nav-list {
+        flex-direction:  column;
+        align-items: flex-end;
+    }
+    .nav-list li {
+        margin: .5em 0;
+    }
+    .nav-link {
+        padding: 1em 0em 1em .5em;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    padding: 2em;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 2em;
+    margin: 0 1em 1em 1em;
+}
+
+.main p, .apoie p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+}
+
+.contact div {
+    width: 100%;
+    background-color: #f6f8f8;
+}
+
+.contact div:nth-child(2) {
+    background-image: url('../images/contact.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 3em auto;
+}
+
+.form-contact .title {
+    margin: 0;
+}
+
+.form-contact label {
+    margin: 1em 0 .5em 0;
+    font-weight: 600;
+}
+
+.form-contact input, .form-contact textarea {
+    border: none;
+    border-radius: 4px;
+    box-shadow: #20202034 0px 2px 6px;
+    padding: 1em;
+    outline: none;
+}
+
+.form-contact textarea {
+    resize: none;
+}
+
+.btn-contact {
+    margin-top: 1em;
+    max-width: 40%;
+    align-self: flex-end;
+    background-color: #5A81FC;
+    text-transform: unset;
+}
+
+.btn-contact:hover {
+    background-color: rgba(90, 128, 252, 0.842);
+}
+
+@media(max-width: 900px) {
+    .contact div:nth-child(2) {
+        display: none;
+    }
+}
+
+.apoie {
+    background-color: #202020;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 3em;
+}
+
+.apoie img {
+    margin: 2em;
+    margin-bottom: 0;
+}
+
+.apoie .btn-apoie {
+    max-width: 40%;
+    margin: 1em auto 0 auto;
+}
+@media(max-width: 768px) {
+    .apoie img {
+       width: 60%;
+    }
+}
+
+.footer {
+    background-color: #f6f8f8;
+    color: #707070;
+    padding: .7em 3em;
+}
