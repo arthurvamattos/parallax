@@ -15,7 +15,6 @@ a {
 }
 
 .header {
-    
     width: 100%;
     min-height: 100vh;
     background-image: url('../images/background.png');
@@ -120,6 +119,12 @@ a {
 .menu {
     padding: .2em;
     display: none;
+    cursor: pointer;
+}
+
+.menu i {
+    color: #fff;
+
 }
 
 @media(max-width: 768px) {
