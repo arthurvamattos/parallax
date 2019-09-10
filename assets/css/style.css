@@ -128,6 +128,8 @@ a {
         align-self: flex-end;
     }
     .navbar {
+        position: fixed;
+        right: 1em;
         width: 60px;
         align-self: flex-end;   
         flex-direction: column;

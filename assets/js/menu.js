@@ -9,7 +9,7 @@ const mostrarMenu = () => {
         navbar.style.height = '60px';
         aberto = false;
     } else {
-        navbar.style.borderRadius = '0';
+        navbar.style.borderRadius = '4px';
         navbar.style.width = '100px';
         navbar.style.height = '260px';
         navbar.addEventListener('resize', () => {
