@@ -190,8 +190,7 @@ a {
 
 .contact div:nth-child(2) {
     background-image: url('../images/contact.jpg');
-    background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
